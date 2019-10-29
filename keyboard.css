@@ -1,0 +1,38 @@
+.keyboard {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  user-select: none;
+  flex-direction: column;
+  background-color: #eee;
+  box-sizing: border-box;
+}
+
+.keyboard-row {
+  display: flex;
+}
+
+.keyboard-key {
+  flex: 1;
+  width: auto;
+  margin: 3px;
+  padding: 3px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  background-color: #ccc;
+}
+
+.keyboard-key-uppercase {
+  text-transform: uppercase;
+}
+
+.keyboard-key-active:after {
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  bottom: 3px;
+  content: '';
+  background: green;
+  position: absolute;
+}

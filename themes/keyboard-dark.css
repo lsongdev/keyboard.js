@@ -1,0 +1,17 @@
+.keyboard.keyboard-theme-dark {
+  background-color: black;
+}
+
+.keyboard.keyboard-theme-dark .keyboard-key {
+  color: #eee;
+  padding: 8px 3px;
+  border-radius: 3px;
+  font-family: monospace;
+  background-color: #222;
+  transition: all 100ms ease-in-out;
+}
+
+.keyboard.keyboard-theme-dark .keyboard-key:hover {
+  color: white;
+  background-color: #555;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Keyboard.js</title>
+  <link rel="stylesheet" href="./keyboard.css">
+  <link rel="stylesheet" href="./themes/keyboard-dark.css">
+  <link rel="stylesheet" href="./themes/keyboard-light.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .keyboard-style-fixed {
+      bottom: 0;
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <textarea id="echo" rows="10" style="width: 100%"></textarea>
+  <div id="app"></div>
+</body>
+<script src="./keyboard.js"></script>
+<script>
+  const keyboard = new Keyboard({
+    theme: 'dark',
+    className: 'keyboard-style-fixed',
+  });
+
+  keyboard.on('keyup', e => {
+    console.log('keyup', e);
+  });
+  keyboard.on('keydown', e => {
+    console.log('keydown', e);
+  });
+  keyboard.on('keypress', e => {
+    console.log('keypress', e);
+  });
+
+</script>
+
+</html>

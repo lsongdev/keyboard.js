@@ -1,0 +1,13 @@
+
+.keyboard.keyboard-theme-light .keyboard-key {
+  padding: 8px 3px;
+  border-radius: 3px;
+  font-family: monospace;
+  background-color: #fff;
+  transition: all 100ms ease-in-out;
+}
+
+.keyboard.keyboard-theme-light .keyboard-key:hover {
+  color: white;
+  background-color: #f70;
+}
